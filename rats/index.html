@@ -3,14 +3,21 @@
 <head>
 
 <title>crazy</title>
-  
+
 <style>
-body {background-color:#242624;}
-.center {
+html, body {
+  background-color:#242624;
+  background-image:url('../assets/rat.gif');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 100%;
+}
+.fill_page {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin: auto;
+  height: 100%;
 }
 </style>
 
@@ -18,9 +25,9 @@ body {background-color:#242624;}
 
 <body>
 
-<audio id="background" src="/assets/freebird.mp3" loop></audio>
+<audio id="background" src="../assets/freebird.mp3" loop></audio>
 <a onclick="document.getElementById('background').play();" title="Hello">
-  <img src="../assets/rat.gif" alt="Hello" class="center">
+  <div class="fill_page"></div>
 </a>
 
 </body>
