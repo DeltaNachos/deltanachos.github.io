@@ -26,7 +26,7 @@ html, body {
 <body>
 
 <audio id="background" src="../assets/freebird.mp3" loop></audio>
-<a onclick="document.getElementById('background').play();" title="Hello">
+<a onclick="toggleSound()" title="Hello">
   <div class="fill_page"></div>
 </a>
 
@@ -36,4 +36,12 @@ html, body {
 <script>
   var audio = document.getElementById("background");
   audio.volume = 0.2;
+  
+  function toggleSound() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
 </script>
