@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>website</title>
-  
-<style>
-body {background-color: black;}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
-
+  <title>My Website</title>
+  <style>
+    body {
+      text-align: center;
+      font-size: 1.2em;
+    }
+    nav {
+      display: inline-block;
+      text-align: left;
+      padding-bottom: 40px; /* added padding */
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .hr-centered {
+      max-width: 20%;
+      margin: 0 auto;
+    }
+  </style>
 </head>
-
 <body>
-
-<img src="/assets/fish.gif" alt="Hello" class="center">
-<audio id="lefishe" src="/assets/lefishe.mp3" loop autoplay></audio>
-
+  <h1>Welcome to my website!</h1>
+  <p>Click on the links below to navigate to other pages.</p>
+  <nav>
+    <ul>
+      <li><a href="rats/">Rats</a></li>
+      <li><a href="fish/">Fish</a></li>
+      <li><a href="test.html">Login</a></li>
+    </ul>
+  </nav>
+  
+  <hr class="hr-centered">
+  
+  <h2>About Me</h2>
+  <p>Hi, my name is Sam and I am a computer engineer. I created this website to show spinning rat gifs.</p>
+  
 </body>
 </html>
-
-<script>
-  var audio = document.getElementById("lefishe");
-  audio.volume = 0.2;
-</script>
