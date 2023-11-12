@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>crazy</title>
+
+<style>
+html, body {
+  background-color:#FFFFFF;
+  background-image:url('../assets/scotland.gif');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  height: 100%;
+}
+.fill_page {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+</style>
+
+</head>
+
+<body>
+
+<audio id="background" src="../assets/scotland.mp3" loop></audio>
+<a onclick="toggleSound()" title="Hello">
+  <div class="fill_page"></div>
+</a>
+
+</body>
+</html>
+
+<script>
+  var audio = document.getElementById("background");
+  audio.volume = 0.2;
+  
+  function toggleSound() {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  }
+</script>
